@@ -20,7 +20,8 @@ addons:
     - clang
 
 script:
+  - bash .travis.sh
   - mkdir build
   - cd build
-  - cmake ../
+  - cmake ..
   - make
